@@ -1,7 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <string>
-
+#include "scrabble.h"
 using namespace std;
 
 int main()
@@ -21,32 +21,29 @@ int main()
 
         if (tokens[0] == "inicializar") {
             // Función para inicializar
-            cout << "Inicializando..." << endl;
+void printinicilaizar();
         } else if (tokens[0] == "iniciar_inverso") {
             // Función para iniciar inverso
-            cout << "Iniciando inverso..." << endl;
+	void printiniciar_inverso();
         } else if (tokens[0] == "palabras_por_prefijo") {
             // Función para palabras por prefijo
-            cout << "Buscando palabras por prefijo: " << tokens[1] << endl;
+    void printpalabras_por_prefijo();
         } else if (tokens[0] == "palabras_por_sufijo") {
             // Función para palabras por sufijo
-            cout << "Buscando palabras por sufijo: " << tokens[1] << endl;
+    void printpalabras_por_sufijo();
         } else if (tokens[0] == "grafo_de_palabras") {
             // Función para grafo de palabras
-            cout << "Generando grafo de palabras..." << endl;
+    void printgrafo_de_palabras();
         } else if (tokens[0] == "posibles_palabras") {
             // Función para posibles palabras
-            cout << "Buscando posibles palabras..." << endl;
+    void printposibles_palabras();
         } else if (tokens[0] == "ayuda") {
             // Mostrar lista de comandos disponibles
-            cout << "Lista de comandos disponibles:" << endl;
-            for (int i=0;i<12;i++){
-                cout<<comando[i]<<endl;
-            }
+                void printayuda();
         }
     } while (input != "salir");
 
-    cout << "Saliendo de la interfaz" << endl;
+    cout << "Saliendo de la interfaz..." << endl;
 
     return 0;
 }

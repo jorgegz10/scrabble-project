@@ -3,9 +3,10 @@
 #include <string>
 using namespace std;
 
+
 class Scrabble {
 	public:
-	void printinicilaizar();
+	void printinicilaizar(const string& nombre_archivo);
 	void printiniciar_inverso();
     void printpalabras_por_prefijo();
     void printpalabras_por_sufijo();
